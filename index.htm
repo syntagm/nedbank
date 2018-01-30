@@ -15,7 +15,7 @@
     </head>
     <body onload="LoadFromQueryString();recalc_onclick('');" onunload='' browserstorage="false">
         <noscript style='color:#F15623;'>
-            The webpage is not working since JavaScript is not enabled.
+            The webpage is not working since JavaScript is not enabled. 
             Most likely, you are viewing using Dropbox website or another limited browser environment.
         </noscript>
 
@@ -26,9 +26,9 @@
             <section class="panel panel-default ">
                 <header class="panel-heading">
                     <a class="panel-title accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#sheet-1" aria-controls="sheet-1">
-                        Welcome
+                        Welcome                    
                         <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
-                    </a>
+                    </a>  
                 </header>
                 <article id="sheet-1" class="panel-collapse collapse in">
                     <div class="panel-body">
@@ -295,9 +295,9 @@
             <section class="panel panel-default ">
                 <header class="panel-heading">
                     <a class="panel-title accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#sheet-2" aria-controls="sheet-2">
-                        Your Details
+                        Your Details                    
                         <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
-                    </a>
+                    </a>  
                 </header>
                 <article id="sheet-2" class="panel-collapse collapse">
                     <div class="panel-body">
@@ -340,7 +340,7 @@
 						<td class='ee134' style='height:15pt;'>&nbsp;</td>
 						<td class='ee137' style='height:15pt;'>
 			<table data-panel='radio' id='panel-agree' style='width:100%;border-collapse:separate;padding-left: 5px;padding-right: 5px;padding-bottom: 5px;'>
-                                        <tr>
+                                        <tr>                
                                             <td class='ee139'>
                                                 <div class='radio radio-primary' style='margin-right:5px;'>
                                                     <input type='radio' name='agree' id='agree_radio1' value='I agree' data-value='s:I agree' onclick='recalc_onclick("agree")' class='required' data-sheet='2' data-row='3' data-col='6' tabindex='1' >
@@ -350,7 +350,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr>                
                                             <td class='ee139'>
                                                 <div class='radio radio-primary' style='margin-right:5px;'>
                                                     <input type='radio' name='agree' id='agree_radio2' value='I do not agree' data-value='s:I do not agree' onclick='recalc_onclick("agree")' class='required' data-sheet='2' data-row='3' data-col='6' tabindex='1' >
@@ -614,13 +614,13 @@ AAAA0AcAAAAAAABQSwECLQAtAAAACABEXq1I+Jgftf//////////GQAUAAAAAAAAAAAAAAAbCAAAQVRN
 AAAAAUEsFBgAAAAADAAMAEwEAAKQLAAAAAA==">
         </form>
         <section class='row toolbar no-print'>
-
+            
             <div class='toolbar-panel-right col-xs-12 col-sm-12 col-md-5 col-md-push-6'>
                 <section id='ssc-ls'></section>
             </div><div class='toolbar-panel-left col-xs-12 col-sm-11 col-md-6 col-md-pull-5'>
                 <button class='btn btn-sm toolbar-button-submit spin-button' data-style=spin-right><span class='glyphicon glyphicon-send'></span><span class='btn-label btn-label-right'>Submit</span><span class='spin'></span></button>
 </div>
-            <div class='toolbar-panel-right-right col-sm-1 col-md-1'><a class='poweredby-logo' href='http://www.syntagm.co.za' target='_blank' tabindex='-1' title='synAPPS Model 2016' alt='synAPPS Model 2016'></a></div>
+            <div class='toolbar-panel-right-right col-sm-1 col-md-1'><a class='poweredby-logo' href='http://www.spreadsheetconverter.com/excel-html-web.htm' target='_blank' tabindex='-1' title='Convert Excel spreadsheet to online form' alt='Convert Excel spreadsheet to online form'></a></div>
         </section>
     </body>
     <script type="text/javascript" src="assets/js/app.min.js" ></script>
@@ -639,9 +639,9 @@ var ssc=ssc||{};ssc.APPNAME='ATM';
                 else
                     showValidateMessage('The fields with the red border are required.');},
 			errorPlacement: function(error, element){
-				if(!($(element).is('select') && ssc.checkIfMSIE())) $(element).attr({'title': error.text()});
+				if(!($(element).is('select') && ssc.checkIfMSIE())) $(element).attr({'title': error.text()});	
 			},
-			highlight: function(element){
+			highlight: function(element){                
 				if($(element).is('input:radio')){
 				$(element).closest('table').addClass('error');
 				}else{
@@ -669,12 +669,12 @@ var ssc=ssc||{};ssc.APPNAME='ATM';
                     if(!elem.parents('.panel-collapse').hasClass('in')) elem.parents('.panel-collapse').collapse('show');
                     $('html, body').stop().animate(
 					{
-						'scrollTop': elem.offset().top - 40
-					},
-					900,
-					'swing',
+						'scrollTop': elem.offset().top - 40			
+					}, 
+					900, 
+					'swing', 
 					function () {
-						elem.focus();
+						elem.focus();						
 					});
                 }
 			$('.btn.btn-sm.toolbar-button-submit.spin-button').click(function(){submitClick(this);})
@@ -694,19 +694,19 @@ var ssc=ssc||{};ssc.APPNAME='ATM';
                         $statusModel.modal('show');}
                     else{$statusModel.find('.modal-title').text('Submit Successful.');
                     $statusModel.find('.modal-body p').text('The form was successfully submitted.');
-                    $statusModel.find('.modal-body .status-icon').removeClass('glyphicon-warning-sign warn-icon').addClass('glyphicon-ok-circle').css('color','rgb(53, 197, 21)');
+                    $statusModel.find('.modal-body .status-icon').removeClass('glyphicon-warning-sign warn-icon').addClass('glyphicon-ok-circle').css('color','rgb(53, 197, 21)');             
                     if($('#xl_redirect_success').length > 0 || false){
                         $statusModel.find('#onlineform-submit-status-modal-close-btn').text('Continue');
                         $statusModel.find('#onlineform-submit-status-modal-close-btn').click(function(){
-                            if($('#xl_redirect_success').length > 0){
+                            if($('#xl_redirect_success').length > 0){ 
                                 var url_ = $('#xl_redirect_success').val();
                                 url_+=(url_.indexOf('paypal')>-1)?'':'';
                                 window.open(url_,'_top');
                             }else{
                                 window.open('','_top');
-                            }
-                        });
-                   }
+                            }  
+                        });                 
+                   } 
                    $statusModel.modal('show');}
                 },after_offlineformsubmit_callback : function(status){
                     if(status ==='success') {
@@ -767,19 +767,19 @@ function navigate(e){var t=e.keyCode|e.which;if(t!=13&&t!=40&&t!=38)return;var n
 /* Finds out if the element is hidden by its parent tr */
                     jQuery.expr[':'].hiddenByParent = function(a) {
                         return ((jQuery(a).closest('.tab-pane>div').css('display') == 'none') || (jQuery(a).closest("tr[class^='_css']").css('display') == 'none'));
-                    };var ssccf1n = function(op,id,css,data1){
+                    };var ssccf1n = function(op,id,css,data1){	
 	                switch(op)
 	                {
-                        						case 'image':
+                        						case 'image':                               
                             $('#' + id).attr('src',$('#'+data1).attr('src'));
                         break;
-
+      		
 	                }
-                };
+                }; 
                 var ssccf4n = function(op,id,colors,data1,data2,data3,data4){
                     switch(op)
                     {
-
+                           
                     }
                 };
 
